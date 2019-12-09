@@ -362,11 +362,23 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button--primary {
   background-color: #E3B873;
   color: #fff;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.button--primary:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button--outline {
@@ -412,6 +424,12 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 40px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.nav__item:hover {
+  color: #E3B873;
 }
 
 .phone {
@@ -440,8 +458,17 @@ template {
   color: #fff;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+}
+
 .hero__content {
   max-width: 670px;
+  position: relative;
 }
 
 .hero__text {
@@ -478,7 +505,18 @@ template {
   bottom: 0;
   min-width: 247px;
   min-height: 97px;
-  background-color: #fff;
+  background-color: #131313;
+  color: #fff;
+}
+
+.hero__scroll-down::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 1px solid #E3B873;
+  border-radius: 50%;
+  margin-left: 12px;
+  background: url(../img/arrow-down.svg) no-repeat center;
 }
 
 .instagram {
@@ -495,11 +533,26 @@ template {
 }
 
 .instagram__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #E3B873;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  line-height: 0.8;
+}
+
+.instagram__link::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: #E3B873;
+  margin-left: 8px;
 }
 
 .title {
