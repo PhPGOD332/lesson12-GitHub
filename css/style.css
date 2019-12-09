@@ -498,6 +498,8 @@ template {
   text-transform: uppercase;
   text-decoration: none;
   color: #E3B873;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .title {
@@ -514,7 +516,7 @@ template {
 }
 
 body {
-  font-family: 'Futura Book' sans-serif;
+  font-family: 'Futura Book', sans-serif;
   font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
