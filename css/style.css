@@ -567,6 +567,7 @@ body {
   min-height: 6.92px;
   background-color: #131313;
   color: #fff;
+  padding: 40px 50px;
 }
 
 .hero__scroll-down::after {
