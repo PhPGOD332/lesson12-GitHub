@@ -23,7 +23,33 @@
     &__content
       margin-left: 0
 
+@media screen and ( max-width: 760px )
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 5rem
+  .card
+    &__text
+      margin-left: 0
+  .design
+    background-color: $dark
+    color: $light
+    &__card
+      margin-bottom: 5.7rem
+  &__section-title
+    color: $light
+
 @media screen and ( max-width: 570px )
+  .section
+    &-title 
+      &__description
+        margin: auto
+        margin-top: 1.64rem
+        font-size: 1.07rem
+        line-height: 135.84%
+        max-width: 21.86rem
   .contacts
     &__phone
       margin-right: 0
@@ -50,4 +76,12 @@
   .hero
     &__scroll-down
       display: none
+  .design
+  background-color: $dark
+  &__section-title
+    color: $light
+  &__card
+    margin-bottom: 5.7rem
+
+
   
