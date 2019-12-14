@@ -484,6 +484,7 @@ img {
 .section-title__heading {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
+  font-size: 1.75rem;
 }
 
 .section-title__image {
@@ -778,12 +779,27 @@ img {
   margin-bottom: 2.78rem;
 }
 
-.design__section-title__heading {
-  font-size: 0.5rem;
+.design .card__title {
+  color: #131313;
+  font-size: 1.5rem;
 }
 
-.design__section-title__description {
-  font-size: 1.43rem;
+.design .card__list {
+  line-height: 2.165rem;
+  font-size: 1.299rem;
+}
+
+.image {
+  margin-bottom: 0.8rem;
+}
+
+.heading {
+  font-size: 1.429rem;
+}
+
+.description {
+  font-size: 1.429rem;
+  margin-bottom: 3.2rem;
 }
 
 .modal {
@@ -927,7 +943,7 @@ img {
   .design__card {
     margin-bottom: 5.7rem;
   }
-  __section-title {
+  .design__section-title {
     color: #fff;
   }
 }
@@ -936,12 +952,47 @@ img {
   .menu__logo {
     font-size: 1rem;
   }
+  .types__section-title__heading {
+    font-size: 4rem;
+  }
+  .types .card__title {
+    font-size: 1.2rem;
+  }
+  .types .card__list {
+    line-height: 1.8rem;
+    font-size: 1.05rem;
+  }
+  .types .card__pricetag {
+    font-size: 1.19rem;
+    padding: 1rem 3.9rem;
+  }
+  .design__section-title {
+    margin-bottom: 2.78rem;
+  }
+  .design .card__title {
+    font-size: 14px;
+  }
+  .design .card__list {
+    line-height: 1.8rem;
+    font-size: 12px;
+  }
+  .design .card__pricetag {
+    font-size: 1.19rem;
+    padding: 1rem 3.9rem;
+  }
+  .section-title__heading {
+    font-size: 1.75rem;
+  }
   .section-title__description {
     margin: auto;
     margin-top: 1.64rem;
     font-size: 1.07rem;
     line-height: 135.84%;
     max-width: 21.86rem;
+  }
+  .control {
+    background-color: #131313;
+    color: #fff;
   }
   .contacts__phone {
     margin-right: 0;
@@ -956,22 +1007,34 @@ img {
     font-size: 1.64rem;
   }
   .hero__title {
-    font-size: 1.8rem;
+    font-size: 1.82rem;
   }
   .hero__scroll-down {
     display: none;
   }
-  .hero__content {
-    max-width: 22.86rem;
-  }
   .hero__text {
-    font-size: 1.45rem;
+    max-width: 305px;
+    font-size: 1.44rem;
     margin-bottom: 2.28rem;
+    line-height: 1.99rem;
+    margin-bottom: 3.15rem;
   }
   .hero__button {
     display: block;
     min-width: 22.86rem;
+    max-width: 350px;
     margin-bottom: 1.85rem;
+    border-radius: 0;
+    padding: 1.61rem 5rem;
+    font-size: 0.952rem;
+    font-family: sans-serif;
+  }
+  .heading {
+    font-size: 1.759rem;
+  }
+  .description {
+    font-size: 1.21rem;
+    max-width: 290px;
   }
 }
 
