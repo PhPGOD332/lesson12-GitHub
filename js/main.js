@@ -46,16 +46,6 @@ $(document).ready(function () {
 
   new WOW().init();
 
-  $('.estm-phone-app img').each(function () {
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-    if (imagePos < topOfWindow + 500) {
-        $(this).addClass("animated slideInUp")
-    }
-  });
-  wow.init();
-
   // Валидация формы
   $('.modal__form').validate({
     errorClass: "invalid",
