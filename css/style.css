@@ -465,6 +465,8 @@ label.invalid {
 
 input.invalid {
   border-bottom: 1px solid red;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .container {
@@ -1141,9 +1143,7 @@ img {
 }
 
 .footer__menu {
-  max-width: 100%;
   background-color: #131313;
-  padding: 4.285rem 0rem;
 }
 
 .footer__map {

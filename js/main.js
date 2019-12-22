@@ -53,7 +53,8 @@ $(document).ready(function () {
       // Строчное правило
       userName: {
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxlength: 15
       },
       userPhone: "required",
       // Правило объект
@@ -65,12 +66,48 @@ $(document).ready(function () {
     messages: {
       userName: {
         required: "Имя обязательно",
-        minlength: "Имя не короче двух букв"
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Телефон обязателен",
       userEmail: {
         required: "Обязательно введие Email",
         email: "Введите в формате: name@domain.com"
+      }
+    }
+  });
+  $('.footer__form').validate( {
+    errorClass: "invalid",
+    rules: {
+      // Строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // Правило объект
+      userQuestion: {
+        required: true,
+        minlength: 20,
+        maxlength: 300
+      },
+      userQuestion: {
+        required: true,
+        text: true
+      }
+    }, // Сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: "Телефон обязателен",
+      userQuestion: {
+        required: "Обязательно введите вопрос",
+        minlength: "Текст не короче 20 символов",
+        maxlength: "Текст не больше 300 символов"
       }
     }
   });
