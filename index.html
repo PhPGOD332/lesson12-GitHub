@@ -49,7 +49,7 @@
           <button class="button hero__button button--primary wow fadeInRight" 
           data-wow-delay="0.3s">Рассчитать стоимость</button>
           <button class="button hero__button button--outline wow fadeInRight" 
-          data-wow-delay="0.3s">Оставить заявку</button>
+          data-wow-delay="0.3s" data-toggle="modal">Оставить заявку</button>
           </div>
         <!-- /.hero__content -->
       </div>
@@ -206,20 +206,24 @@
           трансляцию.</p>
         <form action="#" class="form control__form">
           <div class="control__input-group wow fadeInLeft">
-            <label for="user-name" class="label form__label control__label" data-wow-delay="0.2s">Имя:</label>
-            <input type="text" class="input form__input control__input" id="user-name" 
+            <label for="user-name" class="label form__label control__label" 
+            data-wow-delay="0.2s">Имя:</label>
+            <input type="text" name="userName" class="input form__input control__input" id="user-name" 
             placeholder="Как вас зовут:">
           </div>
           <div class="control__input-group wow fadeIn" data-wow-delay="0.4s">
-            <label for="user-phone" class="label form__label control__label">Телефон:</label>
-            <input type="tel" class="input form__input control__input" id="user-phone" 
+            <label for="user-phone" class="label form__label control__label">
+              Телефон:</label>
+            <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" 
           placeholder="Ваш номер телефона:">
           </div>
-          <button class="button button--primary control__button wow fadeInRight" data-wow-delay="0.2s">Отправить</button>
+          <button class="button button--primary control__button wow fadeInRight" data-wow-delay="0.2s">
+            Отправить</button>
           <div class="policy control__policy">
             <input type="checkbox" name="policy-checkbox" id="policy-checkbox" 
             class="policy__checkbox" checked>
-            <label for="policy-checkbox" class="policy__label control__policy-label wow fadeInUp">Я соглашаюсь с обработкой данных</label>
+            <label for="policy-checkbox" class="policy__label control__policy-label wow fadeInUp">
+              Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
         </form>
@@ -491,29 +495,41 @@
       <div class="map footer__map" id="map">
 
       </div>
-      <div class="footer__menu">
-        <div class="container">
-          <div class="menu">
-            <div class="logo menu__logo">Repair Design Project</div>
-            <nav class="nav menu__nav">
-              <a href="#" class="nav__item">Главная</a>
-              <a href="#" class="nav__item">Проекты</a>
-              <a href="#" class="nav__item">Замер</a>
-              <a href="#" class="nav__item">Команда</a>
-              <a href="#" class="nav__item">Отзывы</a>
-              <a href="#" class="nav__item">Контакты</a>
-            </nav>
-            <div class="contacts menu__contacts">
-              <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-              <button class="button contacts__button button--primary" 
-              data-toggle="modal">Заказать звонок</button>
-            </div>
+    </div>
+    <div class="footer__menu">
+      <div class="container">
+        <div class="menu">
+          <div class="logo menu__logo">Repair Design Project</div>
+          <nav class="nav menu__nav">
+            <a href="#" class="nav__item item__primary">Главная</a>
+            <a href="#" class="nav__item">Проекты</a>
+            <a href="#" class="nav__item">Замер</a>
+            <a href="#" class="nav__item">Команда</a>
+            <a href="#" class="nav__item">Отзывы</a>
+            <a href="#" class="nav__item">Контакты</a>
+          </nav>
+          <div class="contacts menu__contacts">
+            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+            <button class="button contacts__button button--primary" 
+            data-toggle="modal">Заказать звонок</button>
           </div>
-          <!-- /.menu -->
         </div>
-        <!-- /.container -->
+        <!-- /.menu -->
       </div>
-      <!-- /.footer__menu -->
+      <!-- /.container -->
+    </div>
+    <!-- /.footer__menu -->
+    <div class="section small">
+      <div class="container">
+        <div class="section-title small__section-title">
+          <h2 class="heading section-title__heading">Ростов на дону, Торговый центр Plaza Прямой телефон 
+          <span class="number">+7 (999) 768 32 99</span></h2>
+        <div class="small__pictures">
+            <img src="img/photo.svg" alt="camera">
+            <img src="img/mail.svg" alt="mail">
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
   <div class="modal">

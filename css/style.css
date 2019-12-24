@@ -459,7 +459,7 @@ template {
           justify-content: center;
 }
 
-label.invalid {
+div.invalid {
   color: red;
 }
 
@@ -974,6 +974,10 @@ img {
   margin-bottom: -7px;
 }
 
+.control__input {
+  color: #E3B873;
+}
+
 .control__button {
   padding: 1.3rem 4.5rem;
 }
@@ -1144,6 +1148,11 @@ img {
 
 .footer__menu {
   background-color: #131313;
+  padding: 4.285rem 0;
+}
+
+.footer__menu__primary {
+  color: #E3B873;
 }
 
 .footer__map {
@@ -1391,6 +1400,19 @@ img {
   .description {
     font-size: 1.21rem;
     max-width: 290px;
+  }
+  .footer {
+    background: none;
+    background-color: #131313;
+  }
+  .footer__menu {
+    display: none;
+  }
+  .footer__small__section-title__heading {
+    font-size: 1.29rem;
+  }
+  .footer .number {
+    display: block;
   }
 }
 

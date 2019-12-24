@@ -63,6 +63,7 @@ $(document).ready(function () {
         email: true
       }
     }, // Сообщения
+    errorElement: "div",
     messages: {
       userName: {
         required: "Имя обязательно",
@@ -97,6 +98,7 @@ $(document).ready(function () {
         text: true
       }
     }, // Сообщения
+    errorElement: "div",
     messages: {
       userName: {
         required: "Имя обязательно",
@@ -109,6 +111,29 @@ $(document).ready(function () {
         minlength: "Текст не короче 20 символов",
         maxlength: "Текст не больше 300 символов"
       }
+    }
+  });
+
+  // Валидация формы
+  $('.control__form').validate( {
+    errorClass: "invalid",
+    rules: {
+      // Строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+    }, // Сообщения
+    errorElement: "div",
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: "Телефон обязателен",
     }
   });
 
