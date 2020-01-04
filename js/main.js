@@ -137,6 +137,22 @@ $(document).ready(function () {
     }
   });
 
+  $('#modal-form').on('submit', function (event) { 
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "send.php",
+      data: $(this).serialize(),
+      success: function (response) {
+        console.log('Прибыли данные: ' + response);
+        $('#modal-form')[0].reset();
+      },
+      error: function (jqXNR, textStatus,errorThrown) { 
+        console.error(jqXNR + " " + textStatus );
+       }
+    });
+   });
+
   // Маска для номера телефона 
 
   $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7/___/__-__-___"})

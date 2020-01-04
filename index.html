@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=86d8e4cf-c498-4a1b-b913-667097256399&lang=ru_RU" 
-  type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=86d8e4cf-c498-4a1b-b913-667097256399&lang=ru_RU"></script>
   <title>BEM</title>
 </head>
 <body>
@@ -43,9 +42,11 @@
       </div>
       <div class="container">
         <div class="hero__content">
-          <h1 class="title hero__title wow fadeInRight" data-wow-delay="0.5s">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-Дону</span></h1>
-          <p class="hero__text wow fadeInRight" data-wow-delay="0.4s">Получите готовый ремонт под ключ в срок с экономией рабочего
-            времени до 45 дней и 20% от стоимости материалов за счёт организации работы</p>
+          <h1 class="title hero__title wow fadeInRight" data-wow-delay="0.5s">Турецкий ремонт в&nbsp;
+            <span class="title--primary">Ростове-на-Дону</span></h1>
+          <p class="hero__text wow fadeInRight" data-wow-delay="0.4s">Получите готовый ремонт под 
+            ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счёт 
+            организации работы</p>
           <button class="button hero__button button--primary wow fadeInRight" 
           data-wow-delay="0.3s">Рассчитать стоимость</button>
           <button class="button hero__button button--outline wow fadeInRight" 
@@ -187,7 +188,7 @@
     <section class="section control">
       <div class="container">
         <div class="section-title control__section-title section-title--light">
-          <h2 class="section-title__head wow fadeInUp">Онлайн контроль</h2>
+          <h2 class="section-title__heading--control wow fadeInUp">Онлайн контроль</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image wow fadeInUp" data-wow-delay="0.2s">
             <img src="img/video.svg" alt="video">
@@ -206,23 +207,21 @@
           трансляцию.</p>
         <form action="#" class="form control__form">
           <div class="control__input-group wow fadeInLeft">
-            <label for="user-name" class="label form__label control__label" 
-            data-wow-delay="0.2s">Имя:</label>
-            <input type="text" name="userName" class="input form__input control__input" id="user-name" 
+            <label for="control-user-name" class="label form__label control__label" data-wow-delay="0.2s">Имя:</label>
+            <input type="text" class="input form__input control__input" id="control-user-name" 
             placeholder="Как вас зовут:">
           </div>
           <div class="control__input-group wow fadeIn" data-wow-delay="0.4s">
-            <label for="user-phone" class="label form__label control__label">
-              Телефон:</label>
-            <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" 
-          placeholder="Ваш номер телефона:">
+            <label for="control-user-phone" class="label form__label control__label">Телефон:</label>
+            <input type="tel" class="input form__input control__input" id="control-user-phone" 
+            placeholder="Ваш номер телефона:">
           </div>
           <button class="button button--primary control__button wow fadeInRight" data-wow-delay="0.2s">
             Отправить</button>
           <div class="policy control__policy">
-            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" 
+            <input type="checkbox" name="policy-checkbox" id="control-policy-checkbox" 
             class="policy__checkbox" checked>
-            <label for="policy-checkbox" class="policy__label control__policy-label wow fadeInUp">
+            <label for="control-policy-checkbox" class="policy__label control__policy-label wow fadeInUp">
               Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
@@ -234,7 +233,7 @@
     <section class="section types">
       <div class="container">
         <div class="section-title types__section-title">
-          <h2 class="section-title__head wow fadeInUp">Виды ремонта</h2>
+          <h2 class="section-title__heading--types wow fadeInUp">Виды ремонта</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image wow fadeInUp" data-wow-delay="0.2s">
             <img src="img/repair.svg" alt="repair">
@@ -461,6 +460,123 @@
       <!-- /.container -->
     </section>
     <!-- /.section design -->
+    <section class="section team">
+      <div class="container">
+        <div class="section-title team__section-title">
+          <h2 class="heading section-title__heading--team">Наша команда</h2>
+          <div class="section-title__image">
+            <img src="img/team/team.svg" alt="team">
+          </div>
+          <!-- /.section-title__image -->
+          <p class="description section-title__description--team">Наша команда помогла стать счастливее 
+            более чем 500 семьям, и мы не собираемся останавливаться</p>
+          <!-- /.team__description -->
+        </div>
+        <div class="row">
+          <div class="col-30">
+            <div class="card team__card">
+              <div class="card__box-idea">
+                <img src="img/team/idea.svg" alt="">
+              </div>
+              <img src="img/team/man-in-pullover.jpg" alt="man" class="card__image">
+              <div class="card__description">
+                <h3 class="card__name">Алексей Колмаков</h3>
+                <p class="card__position">Проектный менеджер</p>
+                <strong class="card__experience">Опыт работы 8 лет</strong>
+              </div>
+              <!-- /.card__discription -->
+            </div>
+            <!-- /.card team__card -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-30">
+            <div class="card team__card">
+              <div class="card__box-picture">
+                <img src="img/team/picture.svg" alt="idea">
+              </div>
+              <img src="img/team/woman.jpg" alt="woman" class="card__image">
+              <div class="card__description">
+                <h3 class="card__name">Алиса Сухорукова</h3>
+                <p class="card__position">Дизайнер</p>
+                <strong class="card__experience">Опыт работы 6 лет</strong>
+              </div>
+            </div>
+            <!-- /.card team__card -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-30">
+            <div class="card team__card">
+              <div class="card__box-portfolio">
+                <img src="img/team/portfolio.svg" alt="idea">
+              </div>
+              <img src="img/team/man-in-blazer.jpg" alt="" class="card__image">
+              <div class="card__description">
+                <h3 class="card__name">Давид Волынев</h3>
+                <p class="card__position">Бригадир</p>
+                <strong class="card__experience">Опыт работы 7 лет</strong>
+              </div>
+            </div>
+            <!-- /.card team__card -->
+          </div>
+          <!-- /.col-30 -->
+        </div>
+        <!-- /.row -->
+        <p class="team__text">Каждый сотрудник нашей компании является квалифицированным штатным 
+          специалистом с опытом работы от 6 лет. У нас нет гастарбайтеров, каждый сотрудник 
+          выполняет работу, соответствующую его специальности.</p>
+        <!-- /.team__text -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.team -->
+    <section class="section clients">
+      <div class="container">
+        <div class="section-title clients__section-title">
+          <h2 class="heading section-title__heading--clients">Наши клиенты</h2>
+          <div class="section-title__image">
+            <img src="img/clients/contract.svg" alt="contract">
+          </div>
+          <p class="description section-title__description--clients">80% наших клиентов рекомендуют нас 
+            своим знакомым и друзьям</p>
+        </div>
+        <!-- /.section-title clients__section-title -->
+        <div class="row">
+          <div class="col-30">
+            <div class="card clients__card">
+              <div class="title card__title">
+                <div class="card__wrap-image">
+                  <img src="img/clients/woman-in-blouse.jpg" alt="woman in blouse">
+                </div>
+                <div class="card__wrap-text">
+                  <h3 class="name card__name">Савельева<br> 
+                    Екатерина Львовна</h3>
+                </div>
+              </div>
+              
+            </div>
+            <!-- /.card clients__card -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-30">
+            <div class="card clients__card">
+
+            </div>
+            <!-- /.card clients__card -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-30">
+            <div class="card clients__card">
+
+            </div>
+            <!-- /.card clients__card -->
+          </div>
+          <!-- /.col-30 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.clients -->
   </main>
   <footer class="footer section--dark">
     <div class="container">
@@ -468,24 +584,25 @@
         <h3 class="footer__title">Остались вопросы?</h3>
         <form action="#" class="form footer__form">
           <div class="input-group footer__input-group">
-            <label for="user-name" class="label form__label label--light">Имя</label>
+            <label for="footer-user-name" class="label form__label label--light">Имя</label>
             <input type="text" class="input form__input footer__input input--light" name="userName" 
-            id="user-name" placeholder="Как вас зовут: ">
+            id="footer-user-name" placeholder="Как вас зовут: ">
           </div>
           <div class="input-group footer__input-group">
-            <label for="user-phone" class="label form__label label--light">Телефон</label>
-            <input type="tel" class="input form__input footer__input input--light" id="user-phone" 
+            <label for="footer-user-phone" class="label form__label label--light">Телефон</label>
+            <input type="tel" class="input form__input footer__input input--light" id="footer-user-phone" 
             name="userPhone" placeholder="Ваш номер телефона: ">
           </div>
           <div class="input-group footer__input-group footer__input-group--full-width">
-            <label for="user-question" class="label form__label label--light">Вопрос</label>
-            <input type="text" class="input form__input footer__input input--light" id="user-question" 
+            <label for="footer-user-question" class="label form__label label--light">Вопрос</label>
+            <input type="text" class="input form__input footer__input input--light" id="footer-user-question" 
             name="userQuestion" placeholder="Я хочу спросить: ">
           </div>
           <div class="policy footer__policy">
-            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" 
+            <input type="checkbox" name="policy-checkbox" id="footer-policy-checkbox" 
             class="policy__checkbox" checked>
-            <label for="policy-checkbox" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
+            <label for="footer-policy-checkbox" class="policy__label policy__label--center">Я 
+              соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
           <button class="button button--primary footer__button">Отправить</button>
@@ -538,24 +655,24 @@
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
       <form action="#" class="form modal__form">
         <div class="input-group modal__input-group">
-          <label for="user-name" class="label form__label label--light">Имя:</label>
+          <label for="modal-user-name" class="label form__label label--light">Имя:</label>
           <input type="text" name="userName" class="input form__input modal__input input--light" 
-          id="user-name" placeholder="Как вас зовут:">
+          id="modal-user-name" placeholder="Как вас зовут:">
         </div>
         <div class="input-group modal__input-group">
-          <label for="user-phone" class="label form__label label--light">Телефон:</label>
+          <label for="modal-user-phone" class="label form__label label--light">Телефон:</label>
           <input type="tel" name="userPhone" class="input form__input modal__input input--light" 
-          id="user-phone" placeholder="Ваш номер телефона:">
+          id="modal-user-phone" placeholder="Ваш номер телефона:">
         </div>
         <div class="input-group modal__input-group">
-          <label for="user-email" class="label form__label label--light">Email:</label>
+          <label for="modal-user-email" class="label form__label label--light">Email:</label>
           <input type="email" name="userEmail" class="input form__input modal__input input--light" 
-          id="user-email" placeholder="Ваш email:">
+          id="modal-user-email" placeholder="Ваш email:">
         </div>
         <div class="policy modal__policy">
-          <input type="checkbox" name="policy-checkbox" id="policy-checkbox" 
+          <input type="checkbox" name="policy-checkbox" id="modal-policy-checkbox" 
           class="policy__checkbox" checked>
-          <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+          <label for="modal-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
         <button class="button button--primary modal__button">Отправить заявку</button>
@@ -563,7 +680,6 @@
       <!-- /.form modal__form -->
     </div>
     <!-- /.modal__dialog -->
-    </div>
   </div>
   <!-- /.modal -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -571,8 +687,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=86d8e4cf-c498-4a1b-b913-667097256399&lang=ru_RU" 
-  type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=86d8e4cf-c498-4a1b-b913-667097256399&lang=ru_RU"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
