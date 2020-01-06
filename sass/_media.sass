@@ -42,10 +42,28 @@
       color: $light
 
 @media screen and ( max-width: 570px )
+  body
+    background-color: $dark
   .menu
     &__logo
       font-size: 1rem
+  .projects
+    .col-50
+      width: 90%
+    .section-title
+      text-align: center
+      &__heading
+        font-weight: normal
+        font-size: 1.6rem
+      &__text
+        font-size: 1.18rem
+        line-height: 
+      &__word
+        text-align: center
+        &::after
+          display: none
   .types
+    background-color: $light
     &__section-title
       &__heading
         font-size: 4rem
@@ -59,6 +77,7 @@
         font-size: 1.19rem
         padding: 1rem 3.9rem
   .design
+    padding-bottom: 5rem
     &__section-title
       margin-bottom: 2.78rem
     .card
@@ -83,6 +102,41 @@
   .control
     background-color: $dark
     color: $light
+    padding-bottom: 0
+    .container
+      width: 90%    
+    &__text
+      font-size: 1.12rem
+      line-height: 175%
+    .form
+      &__label
+        color: rgba(255, 255, 255, 0.5)
+        margin-bottom: 0.464rem
+        font-size: 1.07rem
+      &__input
+        color: #fff
+    &__input
+      &-group
+        flex-basis: 100%
+        margin-bottom: 4.5rem
+        &--full-width  
+          margin: 0
+          margin-bottom: 1.896rem
+    .order
+      display: flex
+    &__button
+      width: 100%
+      order: 1
+      margin-bottom: -1.88rem
+      padding: 1.3rem 4.5rem
+      font-size: 1.07rem
+    .policy
+      display: flex
+      justify-content: flex-start
+      margin: 0
+      margin-bottom: 4.459rem
+      &__checkbox
+        display: none
   .contacts
     &__phone
       margin-right: 0
@@ -119,17 +173,56 @@
   .description
     font-size: 1.21rem
     max-width: 290px
+  .team
+    margin-bottom: 17.857rem
+    &__section-title
+      .heading
+        color: $light
+        margin-bottom: 3.714rem
+      .description
+        color: $light
+    &__text
+      display: none
+  .clients
+    display: none
+  
   .footer 
     background: none
-    background-color: $dark
+    .container
+      width: 88%
+    &__wrap
+      background-color: $dark
+      padding: 0
+    &__input
+      margin: 0
+      margin-bottom: 4.5rem
+      &-group
+        flex-basis: 100%
+        &--full-width
+          .input
+            margin: 0
+            margin-bottom: 1.545rem
+    .invalid
+      margin-bottom: 1.545rem
+    .input
+      width: 100%
+    .policy
+      display: flex
+      justify-content: flex-start
+      margin-bottom: 67px
+      &__checkbox
+        display: none
+    .button
+      width: 100%
     &__menu
       display: none
-    &__small
+    .contacts
+      order: -1
       &__section-title     
-        &__heading
+        .heading
           font-size: 1.29rem
-    .number
-      display: block
+    .map
+      order: -1
 
 
 @media screen and ( max-height: 520px )

@@ -65,8 +65,7 @@
           <div class="col-50">
             <div class="section-title section-title--left">
               <h2 class="section-title__heading section-title__heading--primary wow fadeInRight" 
-              data-wow-delay="0.3s">Завершенные 
-                <span class="section-title__word">проекты</span></h2>
+              data-wow-delay="0.3s">Завершенные<span class="section-title__word">проекты</span></h2>
               <!-- /.section-title__heading -->
               <p class="section-title__text wow fadeInRight" data-wow-delay="0.2s">На сайте представлена 
                 ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на 
@@ -205,28 +204,31 @@
           сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию 
           с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на 
           трансляцию.</p>
-        <form action="#" class="form control__form">
-          <div class="control__input-group wow fadeInLeft">
-            <label for="control-user-name" class="label form__label control__label" data-wow-delay="0.2s">Имя:</label>
-            <input type="text" class="input form__input control__input" id="control-user-name" 
-            placeholder="Как вас зовут:">
-          </div>
-          <div class="control__input-group wow fadeIn" data-wow-delay="0.4s">
-            <label for="control-user-phone" class="label form__label control__label">Телефон:</label>
-            <input type="tel" class="input form__input control__input" id="control-user-phone" 
-            placeholder="Ваш номер телефона:">
-          </div>
-          <button class="button button--primary control__button wow fadeInRight" data-wow-delay="0.2s">
-            Отправить</button>
-          <div class="policy control__policy">
-            <input type="checkbox" name="policy-checkbox" id="control-policy-checkbox" 
-            class="policy__checkbox" checked>
-            <label for="control-policy-checkbox" class="policy__label control__policy-label wow fadeInUp">
-              Я соглашаюсь с обработкой данных</label>
-          </div>
-          <!-- /.policy -->
-        </form>
-        <!-- /.form control__form -->
+        <div class="order control__order">
+          <form action="#" class="form control__form">
+            <div class="control__input-group wow fadeInLeft">
+              <label for="control-user-name" class="label form__label control__label" data-wow-delay="0.2s">Имя:</label>
+              <input type="text" class="input form__input control__input" id="control-user-name" 
+              placeholder="Как вас зовут:">
+            </div>
+            <div class="control__input-group control__input-group--full-width wow fadeIn" data-wow-delay="0.4s">
+              <label for="control-user-phone" class="label form__label control__label">Телефон:</label>
+              <input type="tel" class="input form__input control__input" id="control-user-phone" 
+              placeholder="Ваш номер телефона:">
+            </div>
+            <button class="button button--primary control__button wow fadeInRight" data-wow-delay="0.2s">
+              Отправить</button>
+            <div class="policy control__policy">
+              <input type="checkbox" name="policy-checkbox" id="control-policy-checkbox" 
+              class="policy__checkbox" checked>
+              <label for="control-policy-checkbox" class="policy__label control__policy-label wow fadeInUp">
+                Я соглашаюсь с обработкой данных</label>
+            </div>
+            <!-- /.policy -->
+          </form>
+          <!-- /.form control__form -->
+        </div>
+        <!-- /.order -->
       </div>
     </section>
     <!-- /.section control -->
@@ -463,7 +465,7 @@
     <section class="section team">
       <div class="container">
         <div class="section-title team__section-title">
-          <h2 class="heading section-title__heading--team">Наша команда</h2>
+          <h2 class="heading section-title__heading">Наша команда</h2>
           <div class="section-title__image">
             <img src="img/team/team.svg" alt="team">
           </div>
@@ -532,7 +534,7 @@
     <section class="section clients">
       <div class="container">
         <div class="section-title clients__section-title">
-          <h2 class="heading section-title__heading--clients">Наши клиенты</h2>
+          <h2 class="heading section-title__heading">Наши клиенты</h2>
           <div class="section-title__image">
             <img src="img/clients/contract.svg" alt="contract">
           </div>
@@ -580,38 +582,57 @@
   </main>
   <footer class="footer section--dark">
     <div class="container">
-      <div class="footer__wrap">
-        <h3 class="footer__title">Остались вопросы?</h3>
-        <form action="#" class="form footer__form">
-          <div class="input-group footer__input-group">
-            <label for="footer-user-name" class="label form__label label--light">Имя</label>
-            <input type="text" class="input form__input footer__input input--light" name="userName" 
-            id="footer-user-name" placeholder="Как вас зовут: ">
+      <div class="order">
+        <div class="footer__wrap">
+          <h3 class="footer__title">Остались вопросы?</h3>
+          <form action="#" class="form footer__form">
+            <div class="input-group footer__input-group">
+              <label for="footer-user-name" class="label form__label label--light">Имя</label>
+              <input type="text" class="input form__input footer__input input--light" name="userName" 
+              id="footer-user-name" placeholder="Как вас зовут: ">
+            </div>
+            <div class="input-group footer__input-group">
+              <label for="footer-user-phone" class="label form__label label--light">Телефон</label>
+              <input type="tel" class="input form__input footer__input input--light" id="footer-user-phone" 
+              name="userPhone" placeholder="Ваш номер телефона: ">
+            </div>
+            <div class="input-group footer__input-group footer__input-group--full-width">
+              <label for="footer-user-question" class="label form__label label--light">Вопрос</label>
+              <input type="text" class="input form__input footer__input input--light" id="footer-user-question" 
+              name="userQuestion" placeholder="Я хочу спросить: ">
+            </div>
+            <div class="policy footer__policy">
+              <input type="checkbox" name="policy-checkbox" id="footer-policy-checkbox" 
+              class="policy__checkbox" checked>
+              <label for="footer-policy-checkbox" class="policy__label policy__label--center">Я 
+                соглашаюсь с обработкой данных</label>
+            </div>
+            <!-- /.policy -->
+            <button class="button button--primary footer__button">Отправить</button>
+          </form>
+          <!-- /.form footer__form -->
+        </div>
+        <div class="contacts">
+          <div class="container">
+            <div class="section-title contacts__section-title">
+              <h2 class="heading section-title__heading--contacts section-title__heading--primary">
+                Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h2>
+            </div>
+            <div class="pictures contacts__pictures">
+              <a href=""><div class="pictures__contact">
+                <img src="img/mail.svg" alt="">
+              </div></a>
+              <a href=""><div class="pictures__contact">
+                <img src="img/photo.svg" alt="">
+              </div></a>
+            </div>
           </div>
-          <div class="input-group footer__input-group">
-            <label for="footer-user-phone" class="label form__label label--light">Телефон</label>
-            <input type="tel" class="input form__input footer__input input--light" id="footer-user-phone" 
-            name="userPhone" placeholder="Ваш номер телефона: ">
-          </div>
-          <div class="input-group footer__input-group footer__input-group--full-width">
-            <label for="footer-user-question" class="label form__label label--light">Вопрос</label>
-            <input type="text" class="input form__input footer__input input--light" id="footer-user-question" 
-            name="userQuestion" placeholder="Я хочу спросить: ">
-          </div>
-          <div class="policy footer__policy">
-            <input type="checkbox" name="policy-checkbox" id="footer-policy-checkbox" 
-            class="policy__checkbox" checked>
-            <label for="footer-policy-checkbox" class="policy__label policy__label--center">Я 
-              соглашаюсь с обработкой данных</label>
-          </div>
-          <!-- /.policy -->
-          <button class="button button--primary footer__button">Отправить</button>
-        </form>
-        <!-- /.form footer__form -->
+        </div>
+        <div class="map footer__map" id="map">
+  
+        </div>
       </div>
-      <div class="map footer__map" id="map">
-
-      </div>
+      <!-- /.order -->
     </div>
     <div class="footer__menu">
       <div class="container">
@@ -636,18 +657,6 @@
       <!-- /.container -->
     </div>
     <!-- /.footer__menu -->
-    <div class="section small">
-      <div class="container">
-        <div class="section-title small__section-title">
-          <h2 class="heading section-title__heading">Ростов на дону, Торговый центр Plaza Прямой телефон 
-          <span class="number">+7 (999) 768 32 99</span></h2>
-        <div class="small__pictures">
-            <img src="img/photo.svg" alt="camera">
-            <img src="img/mail.svg" alt="mail">
-          </div>
-        </div>
-      </div>
-    </div>
   </footer>
   <div class="modal">
     <div class="modal__dialog">
