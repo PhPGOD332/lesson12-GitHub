@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=86d8e4cf-c498-4a1b-b913-667097256399&lang=ru_RU"></script>
@@ -195,8 +196,9 @@
           <!-- /.section-title__image -->
         </div>
         <!-- /.section-title -->
-        <div class="control__video video wow fadeIn">
-          <img src="img/play-icon.svg" alt="" class="video__play">
+        <div class="control__video video wow fadeIn" id="player">
+          <a data-fancybox href="https://www.youtube.com/watch?v=RHzzLqJWqHs" class="video__play">
+            <img src="img/play-icon.svg" alt=""></a>
         </div>
         <!-- /.control__video video -->
         <p class="control__text wow fadeInUp" data-wow-delay="0.1s">На каждом объекте установлена ​​камера, которая 
@@ -208,12 +210,12 @@
           <form action="#" class="form control__form">
             <div class="control__input-group wow fadeInLeft">
               <label for="control-user-name" class="label form__label control__label" data-wow-delay="0.2s">Имя:</label>
-              <input type="text" class="input form__input control__input" id="control-user-name" 
+              <input type="text" class="input form__input control__input" name="userName" id="control-user-name" 
               placeholder="Как вас зовут:">
             </div>
             <div class="control__input-group control__input-group--full-width wow fadeIn" data-wow-delay="0.4s">
               <label for="control-user-phone" class="label form__label control__label">Телефон:</label>
-              <input type="tel" class="input form__input control__input" id="control-user-phone" 
+              <input type="tel" class="input form__input control__input" name="userPhone" id="control-user-phone" 
               placeholder="Ваш номер телефона:">
             </div>
             <button class="button button--primary control__button wow fadeInRight" data-wow-delay="0.2s">
@@ -534,7 +536,7 @@
     <section class="section clients">
       <div class="container">
         <div class="section-title clients__section-title">
-          <h2 class="heading section-title__heading">Наши клиенты</h2>
+          <h2 class="section-title__heading">Наши клиенты</h2>
           <div class="section-title__image">
             <img src="img/clients/contract.svg" alt="contract">
           </div>
@@ -613,21 +615,20 @@
           <!-- /.form footer__form -->
         </div>
         <div class="contacts">
-          <div class="container">
-            <div class="section-title contacts__section-title">
-              <h2 class="heading section-title__heading--contacts section-title__heading--primary">
-                Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h2>
-            </div>
-            <div class="pictures contacts__pictures">
-              <a href=""><div class="pictures__contact">
-                <img src="img/mail.svg" alt="">
-              </div></a>
-              <a href=""><div class="pictures__contact">
-                <img src="img/photo.svg" alt="">
-              </div></a>
-            </div>
+          <div class="section-title contacts__section-title">
+            <h2 class="heading section-title__heading--contacts section-title__heading--primary">
+              Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h2>
+          </div>
+          <div class="pictures contacts__pictures">
+            <a href=""><div class="pictures__contact">
+              <img src="img/mail.svg" alt="mail">
+            </div></a>
+            <a href=""><div class="pictures__contact">
+              <img src="img/photo.svg" alt="camera">
+            </div></a>
           </div>
         </div>
+        <!-- /.contacts -->
         <div class="map footer__map" id="map">
   
         </div>
@@ -696,6 +697,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=86d8e4cf-c498-4a1b-b913-667097256399&lang=ru_RU"></script>
   <script src="js/main.js"></script>
 </body>
