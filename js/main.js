@@ -134,6 +134,20 @@ $(document).ready(function () {
         maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Телефон обязателен",
+    },
+    submitHandler: function(form) {  
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+        },
+        error: function (response) { 
+          console.error('Ошибка запроса' + response)
+        }
+      });
     }
   });
 
@@ -147,7 +161,7 @@ $(document).ready(function () {
         console.log('Прибыли данные: ' + response);
         $('#modal-form')[0].reset();
       },
-      error: function (jqXNR, textStatus,errorThrown) { 
+      error: function (jqXNR, textStatus) { 
         console.error(jqXNR + " " + textStatus );
        }
     });
@@ -155,8 +169,8 @@ $(document).ready(function () {
 
   // Маска для номера телефона 
 
- /*  $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7/___/__-__-___"})
-  var player;
+  $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7/___/__-__-___"})
+/*   var player;
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
       height: '465',

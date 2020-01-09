@@ -48,6 +48,7 @@
     &__logo
       font-size: 1rem
   .projects
+    padding-top: 0
     .col-50
       width: 100%
       .swiper
@@ -60,8 +61,6 @@
           left: 0
         &-pagination
           left: 0
-
-
     .section-title
       text-align: center
       &__heading
@@ -69,9 +68,10 @@
         font-size: 1.6rem
       &__text
         font-size: 1.18rem
-        line-height: 
+        line-height: 1.9rem
       &__word
-        text-align: center
+        display: block
+        margin-top: 0
         &::after
           display: none
   .types
@@ -89,7 +89,7 @@
         font-size: 1.19rem
         padding: 1rem 3.9rem
   .design
-    padding-bottom: 5rem
+    padding-bottom: 0
     &__section-title
       margin-bottom: 2.78rem
     .card
@@ -118,8 +118,15 @@
     .container
       width: 90%    
     &__text
-      font-size: 1.12rem
+      font-size: 1.1rem
       line-height: 175%
+      &::before
+        margin-bottom: 1.45rem
+    .video
+      min-height: 207px
+      margin-bottom: 2rem  
+      &__play
+        width: 19%
     .form
       &__label
         color: rgba(255, 255, 255, 0.5)
@@ -136,6 +143,8 @@
           margin-bottom: 1.896rem
     .order
       display: flex
+    .slide-text 
+      order: -1
     &__button
       width: 100%
       order: 1
@@ -186,6 +195,7 @@
     font-size: 1.21rem
     max-width: 290px
   .team
+    padding-top: 0
     margin-bottom: 17.857rem
     &__section-title
       .heading
@@ -195,6 +205,11 @@
         color: $light
     &__text
       display: none
+    .card
+      margin-right: -35px
+      &__box
+        margin-top: 3.857rem
+        margin-left: -35px
   .clients
     display: none
   .footer 
@@ -250,6 +265,10 @@
     .map
       margin-bottom: 3.2rem
       order: 0
+  .modal
+    &__button
+      width: 100%
+
 
 
 @media screen and ( max-height: 520px )
