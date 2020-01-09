@@ -217,5 +217,5 @@ $(document).ready(function () {
 
     myMap.geoObjects
         .add(myPlacemark)
-});
+  });
 });
