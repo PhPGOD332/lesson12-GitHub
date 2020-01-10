@@ -61,7 +61,10 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policyCheckbox: {
+        required: true,
+      },
     }, // Сообщения
     errorElement: "div",
     messages: {
@@ -74,8 +77,16 @@ $(document).ready(function () {
       userEmail: {
         required: "Обязательно введие Email",
         email: "Введите в формате: name@domain.com"
+      },
+      policyCheckbox: "Для продолжения подтвердите соглашение"
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
       }
-    }
+  
+       error.insertAfter($(element));
+  }
   });
   $('.footer__form').validate( {
     errorClass: "invalid",
@@ -134,20 +145,6 @@ $(document).ready(function () {
         maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Телефон обязателен",
-    },
-    submitHandler: function(form) {  
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
-          $(form)[0].reset();
-        },
-        error: function (response) { 
-          console.error('Ошибка запроса' + response)
-        }
-      });
     }
   });
 
@@ -161,7 +158,7 @@ $(document).ready(function () {
         console.log('Прибыли данные: ' + response);
         $('#modal-form')[0].reset();
       },
-      error: function (jqXNR, textStatus) { 
+      error: function (jqXNR, textStatus,errorThrown) { 
         console.error(jqXNR + " " + textStatus );
        }
     });
@@ -170,21 +167,6 @@ $(document).ready(function () {
   // Маска для номера телефона 
 
   $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7/___/__-__-___"})
-/*   var player;
-  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '465',
-      width: '100%',
-      videoId: 'RHzzLqJWqHs',
-      events: {
-        'onReady': videoPlay,
-      }
-    });
-  })
-
-  function videoPlay(event) {  
-    event.target.player.playVideo();
-  } */
 
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
@@ -217,5 +199,21 @@ $(document).ready(function () {
 
     myMap.geoObjects
         .add(myPlacemark)
+    document.getElementById("map").appendChild(script);
   });
+
+  mapShown = false; 
+
+  $(document).ready(function (){
+
+    $(window).scroll(function() {
+       if (!mapShown){
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {      
+         MyMap();
+         mapShown = true;
+        }
+       }
+    });
+  });
+
 });

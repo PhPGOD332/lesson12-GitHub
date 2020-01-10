@@ -43,8 +43,12 @@
           background: $primary url('../img/check.svg') no-repeat center / 0.8rem       
   &__label
     display: flex
+    flex-wrap: wrap
     align-items: center
     font-size: 1.142rem
+    .invalid
+      margin-top: 10px
+      font-size: 1.142rem
     &::before
       align-items: center
       content: ''
